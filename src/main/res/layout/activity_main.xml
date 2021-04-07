@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.ua.eps.automatismos.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="¡Bienvenido! Ingresa tus datos para ver tu saldo"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:hint="Usuario" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:id="@+id/contra"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cuenta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="ingresar"
+        android:id="@+id/login"/>
+
+</RelativeLayout>
